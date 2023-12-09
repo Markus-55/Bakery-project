@@ -21,7 +21,7 @@ Konsekvenser kan inkludera omfördelning av arbetsuppgifter eller andra åtgärd
 
 [Namn] Stefan Lahtinen/EnniusXII [Datum] 2023-12-08
 
-[Namn] _______ [Datum] _______
+[Namn] Mariam Hakobyan/Maariamcita [Datum] 2023-12-08
 
 Genom att underteckna detta kontrakt bekräftar varje medlem sitt åtagande att följa och respektera de överenskomna riktlinjerna för vårt samarbete.
 
