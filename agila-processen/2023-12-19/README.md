@@ -9,11 +9,11 @@
 
 **Idag har jag lärt mig** Att jobba med grids i CSS.
 
-## Namn: 
-**Idag har jag** 
+## Namn: Markus Bielaszka
+**Idag har jag** börjat med koda beställ kalender.
 
-**Ett problem jag har** 
+**Ett problem jag har** är att komma igång med att göra kalendern med javascritpt.
 
-**Jag behöver hjälp med** 
+**Jag behöver hjälp med** att göra kalendern dynamisk.
 
-**Idag har jag lärt mig** 
+**Idag har jag lärt mig** att använda date i javascript: `new Date()` etc.
