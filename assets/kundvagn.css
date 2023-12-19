@@ -1,3 +1,18 @@
 input {
     width: 50px;
 }
+
+.cart-container {
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+    border: 1px solid red;
+    width: 400px;
+    height: 500px;
+    background-color: yellow;
+}
+
+.cart-information {
+    margin: 10px;
+    margin-left: 50px;
+}
