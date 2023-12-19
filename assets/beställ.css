@@ -55,28 +55,32 @@ table {
 header {
 
     div{
-        border: 1px solid red;
         display: flex;
         justify-content: center;
         background-color: #EBE9E3;
 
         img{
-            /* border: 1px solid black; */
             height: 9rem;
         }
     }
 
     nav{
         background-color: #EBE9E3;
-        height: 30px;
+        height: 40px;
 
         ul{
-            border: 1px solid red;
             display: flex;
             justify-content: center;
             gap: 80px;
             align-items: center;
             height: 100%;
+
+            li {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
 
             
         }
@@ -85,7 +89,6 @@ header {
 
 
 main {
-    border: 1px solid blue;
     display: grid; 
     grid-template-columns: 15% 15% 15%;
     grid-template-rows: 20% 30% 30%;
@@ -93,11 +96,16 @@ main {
     justify-content: center;
 
     div{
+        border: 1px solid black;
         margin-top: 50px;
         justify-self: center;
         align-self: center;
-        border: 1px solid black;
         height: 350px;
         width: 250px;
+    }
+
+    p {
+        padding: 5px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
