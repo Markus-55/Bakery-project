@@ -17,3 +17,12 @@
 **Jag behöver hjälp med** att göra kalendern dynamisk.
 
 **Idag har jag lärt mig** att använda date i javascript: `new Date()` etc.
+
+## Namn: William Jansson
+**Idag har jag** Forsatt med kundvagnen
+
+**Ett problem jag har** inget problem än
+
+**Jag behöver hjälp med** Inget just nu.
+
+**Idag har jag lärt mig** hur man gör så att totala priset ändras när man ändrar antal i kundvagnen.
