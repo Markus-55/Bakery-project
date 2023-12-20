@@ -7,38 +7,40 @@
     <link rel="stylesheet" href="kundvagn.css" />
   </head>
   <body>
-    <div class="cart-container">
-        <div class="cart-information">
-            <span>Produkt </span>
-            <span>Antal </span>
-             <span>Pris </span>
-        </div>
-      <section class="cart-items">
-        <div class="cart-row">
-          <span>Tårta</span>
-          <input class="cart-quantity" type="number" value="1" />
-          <span class="item-price">200kr</span>
-          <button class="remove-item">Ta bort</button>
-        </div>
-        <div class="cart-row">
-          <span>Kanelbulle</span>
-          <input class="cart-quantity" type="number" value="1" />
-          <span class="item-price">20kr</span>
-          <button class="remove-item">Ta bort</button>
-        </div>
-
-        <div class="cart-row">
-          <span>Bröd</span>
-          <input class="cart-quantity" type="number" value="1" />
-          <span class="item-price">30kr</span>
-          <button class="remove-item">Ta bort</button>
-        </div>
-      </section>
-      <div class="cart-total">
-        <span class="cart-total-price">Total pris:</span>
-        <span class="total-price">250kr</span>
+    <header>
+      <div>
+          <img src="logo/Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo  (1).png" alt="logotype">
       </div>
+      
+      <nav>
+          <ul>
+            <li><a class="hemknapp" href="index.html">Hem</a></li>
+            <li><a class="beställ" href="beställ.html">Beställ</a></li>
+            <li>Om oss</li>
+            <li>Kontakt</li>
+            <li>Jobba hos oss</li>
+            <li>Kalender</li>
+
+            <a class="cart" href="kundvagn.html">
+              <img alt="Shopping cart" src="icons/shopping cart.jpg" width="50" height="50">
+              </a>
+          </ul>
+
+      </nav>
+  </header>
+
+  <div class="cart-container">
+    <div class="cart-information">
+        <p>Produkt </p>
+        <p>Antal </p>
+         <p>Pris </p>
     </div>
-    <script src="kundvagn.js"></script>
+  <section class="cart-items"></section>
+  <div class="cart-total">
+    <span class="cart-total-title">Total pris:</span>
+    <span class="cart-total-price">0 kr</span>
+  </div>
+</div>
+<script src="kundvagn.js"></script>
   </body>
 </html>

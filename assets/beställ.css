@@ -100,7 +100,7 @@ main {
     row-gap: 20px;
     justify-content: center;
 
-    div{
+    .shop-item{
         border: 1px solid black;
         margin-top: 50px;
         justify-self: center;
@@ -114,3 +114,8 @@ main {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
+
+input{
+    width: 40px;
+}
+
