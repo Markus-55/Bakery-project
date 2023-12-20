@@ -121,11 +121,6 @@ input{
 
 
 .cart-container {
-    float: right;
-    margin-top: 50px;
-    margin-right: 50px;
-    width: 400px;
-    height: 500px;
     background-color: #EBE9E3;;
     border-radius: 5%;
     font-weight: bold;
