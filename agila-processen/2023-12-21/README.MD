@@ -6,3 +6,14 @@
 **Jag behöver hjälp med** Inget just nu.
 
 **Idag har jag lärt mig** lärt mig lite om objekt i arrayer samt hur man kan nyttja en forEach() med det.
+
+
+## Namn: Markus Bielaszka
+**Idag har jag** fortsatte med kalendern och matchat datumet under rätt dag
+
+**Ett problem jag har** är att jag är osäker om datumet kommer vara under rätt dag de andra månader.
+
+**Jag behöver hjälp med** Behöver ingen hjälp just nu.
+
+**Idag har jag lärt mig** mer om `date` i js, att jag kan välja rätt dag genom att ändra tredje argument:
+`new Date(currYear, currMonth, 0).getDay();` 0 === måndag, 1 === tisdag etc.
