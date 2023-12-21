@@ -17,3 +17,13 @@
 
 **Idag har jag lärt mig** mer om `date` i js, att jag kan välja rätt dag genom att ändra tredje argument:
 `new Date(currYear, currMonth, 0).getDay();` 0 === måndag, 1 === tisdag etc.
+
+
+## Namn: Stefan Lahtinen
+**Idag har jag** lärt mig om olika sätt jag kan göra en filtreringsfunktion på.
+
+**Ett problem jag har** är hur jag exakt ska implementera det.
+
+**Jag behöver hjälp med** -
+
+**Idag har jag lärt mig** mer om functions och hur jag kan använda dom.
