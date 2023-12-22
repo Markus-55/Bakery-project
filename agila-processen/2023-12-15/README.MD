@@ -19,6 +19,15 @@ idag har jag lärt mig - hur document.getElementByClassName funkar.  -->
 **Idag har jag lärt mig** om branch naming best practices. -->
 
 <!-- ## Namn: Mariam
+**Idag har** börjat jobba med hemsidans hero section. 
+
+**Ett problem jag har** skapa branches på rätt sätt.
+
+**Jag behöver hjälp med** har kollat på videos för att komma ihåg om hur man gör branches rätt.
+
+**Idag har jag lärt mig** göra branchs på rätt sätt.
+
+<!-- ## Namn: Mariam
 **Idag har** jag gjort navigeringen och logotypen. Har jobbat på head delen. 
 
 **Ett problem jag har** har gjort branch på fel sätt så det har ej skapats branch. 

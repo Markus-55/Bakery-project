@@ -26,3 +26,12 @@
 **Jag behöver hjälp med** Inget just nu.
 
 **Idag har jag lärt mig** hur man gör så att totala priset ändras när man ändrar antal i kundvagnen.
+
+## Namn: Mariam Hakobyan
+**Idag har jag** jobbat en hel del med min head section. 
+
+**Ett problem jag har** inga problem än så länge. 
+
+**Jag behöver hjälp med** inget för denna del. 
+
+**Idag har jag lärt mig** hur man länkar någon annans html fil i en egna fil.
