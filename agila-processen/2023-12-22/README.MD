@@ -26,3 +26,14 @@
 
 **Idag har jag lärt mig**  Lärt mig om LocalStorage.
 
+## Namn: Markus Bielaszka
+**Idag har jag** testat klart om datumet matchar med rätt dagar varje månad och försökte fylla på tomma kalender dagar med dagar från nästa månad
+
+**Ett problem jag har** att jag inte lyckas få första dagar från nästa månad, jag får fel datum
+
+**Jag behöver hjälp med** inget just nu.
+
+**Idag har jag lärt mig** mer om hur jag kan manipulera Dates, för att kunna testa min kod etc.
+
+
+
