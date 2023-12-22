@@ -27,3 +27,12 @@
 **Jag behöver hjälp med** -
 
 **Idag har jag lärt mig** mer om functions och hur jag kan använda dom.
+
+## Namn: Mariam Hakobyan
+**Idag har jag** börjat med min body section. 
+
+**Ett problem jag har** glömt vissa saker i css som gör att jag fastnar i vissa moment lite för länge. 
+
+**Jag behöver hjälp med** komma ihåg vissa moment i css som kommer underlätta processen i mitt arbete. 
+
+**Idag har jag lärt mig** gjort repetition för det mesta.

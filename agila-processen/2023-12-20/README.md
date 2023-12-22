@@ -21,3 +21,14 @@ lägger 0 som sista argument, för att ta ett steg bakåt och få datumet 31 fö
 **Jag behöver hjälp med** Inget nu.
 
 **Idag har jag lärt mig** Hur man manipulerar i Javascript. (Tror jag)
+
+# Datum: 2023-12-20
+
+## Namn: Mariam Hakobyan
+**Idag har jag** gjort klart min head section. 
+
+**Ett problem jag har** delvis positionering. 
+
+**Jag behöver hjälp med**  att positionera på ett bättre sätt.
+
+**Idag har jag lärt mig** inget nytt. 
