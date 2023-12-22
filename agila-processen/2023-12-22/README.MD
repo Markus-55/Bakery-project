@@ -16,3 +16,13 @@
 **Jag behöver hjälp med** -
 
 **Idag har jag lärt mig**  massor om dynamiska funktioner och hur koden kan funka tillsammans och hur man kan implementera den praktiskt.
+
+## Namn: William Jansson
+**Idag har jag** Varit på lektionen
+
+**Ett problem jag har**  Inget just nu.
+
+**Jag behöver hjälp med** inget just nu.
+
+**Idag har jag lärt mig**  Lärt mig om LocalStorage.
+
