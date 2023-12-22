@@ -166,3 +166,97 @@ main {
 }
 
 
+/* Gemensam styling för båda sektionerna */
+.our-mission,
+.our-pastry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%; 
+}
+
+/* Styling för den första sektionen */
+.our-mission .mission-image {
+  width: 40%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.vår-mission,
+.short-text1,
+.läs-mer-knapp1 {
+  position: relative;
+  z-index: 1;
+  margin-left: 50%;
+  margin-top: -20%;
+
+}
+
+.vår-mission {
+  font-size: 22px;
+  margin-left: 50%;
+  font-weight: bold;
+}
+
+.short-text1 {
+  font-size: 16px;
+  margin-top: 10px; 
+}
+
+.läs-mer-knapp1 {
+  background-color: #373435; 
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1%;
+}
+
+/* Styling för den andra sektionen */
+.our-pastry .pastry-image {
+  width: 40%;
+  height: auto;
+  margin-left: 55%;
+  margin-top: 15%;
+  justify-content: space-between;
+}
+
+.our-pastry .text-container {
+  text-align: right;
+}
+
+.våra-bakelser,
+.short-text2,
+.läs-mer-knapp2 {
+  position: relative;
+  z-index: 1;
+  margin-top:-20% ;
+
+}
+
+.våra-bakelser {
+  font-size: 22px;
+  margin-top: -20%;
+  margin-right: 70%;
+  font-weight: bold;
+}
+
+.short-text2 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 52%;
+}
+
+.läs-mer-knapp2 {
+  background-color: #373435; 
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 73%;
+  margin-top: 1%;
+}
