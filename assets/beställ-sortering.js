@@ -6,8 +6,8 @@ const väljBröd = document.querySelector("#bröd");
 
 const visaAlla = () => {
     const tårtor = document.querySelectorAll(".tårta");
-    const bakelser = document.querySelectorAll(".bakelse")
-    const bröd = document.querySelectorAll(".bröd")
+    const bakelser = document.querySelectorAll(".bakelse");
+    const bröd = document.querySelectorAll(".bröd");
 
     tårtor.forEach(div => {
         div.style.display = "block";
@@ -25,8 +25,8 @@ const visaAlla = () => {
 
 const visaTårtor = () => {
     const tårtor = document.querySelectorAll(".tårta");
-    const bakelser = document.querySelectorAll(".bakelse")
-    const bröd = document.querySelectorAll(".bröd")
+    const bakelser = document.querySelectorAll(".bakelse");
+    const bröd = document.querySelectorAll(".bröd");
 
     tårtor.forEach(div => {
         div.style.display = "block";
@@ -40,11 +40,12 @@ const visaTårtor = () => {
         div.style.display = "none";
     });
 };
+
 
 const visaBakelser = () => {
     const tårtor = document.querySelectorAll(".tårta");
-    const bakelser = document.querySelectorAll(".bakelse")
-    const bröd = document.querySelectorAll(".bröd")
+    const bakelser = document.querySelectorAll(".bakelse");
+    const bröd = document.querySelectorAll(".bröd");
 
     tårtor.forEach(div => {
         div.style.display = "none";
@@ -59,10 +60,11 @@ const visaBakelser = () => {
     });
 };
 
+
 const visaBröd = () => {
     const tårtor = document.querySelectorAll(".tårta");
-    const bakelser = document.querySelectorAll(".bakelse")
-    const bröd = document.querySelectorAll(".bröd")
+    const bakelser = document.querySelectorAll(".bakelse");
+    const bröd = document.querySelectorAll(".bröd");
 
     tårtor.forEach(div => {
         div.style.display = "none";
