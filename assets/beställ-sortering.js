@@ -3,84 +3,25 @@ const väljTårtor = document.querySelector("#tårtor");
 const väljBakelser = document.querySelector("#bakelser");
 const väljBröd = document.querySelector("#bröd");
 
-
-const visaAlla = () => {
+const sortering = (val) => {
     const tårtor = document.querySelectorAll(".tårta");
     const bakelser = document.querySelectorAll(".bakelse");
     const bröd = document.querySelectorAll(".bröd");
 
     tårtor.forEach(div => {
-        div.style.display = "block";
+        div.style.display = (val === "tårta" || val === "alla") ? "block" : "none";
     });
 
     bakelser.forEach(div => {
-        div.style.display = "block";
+        div.style.display = (val === "bakelse" || val === "alla") ? "block" : "none";
     });
 
     bröd.forEach(div => {
-        div.style.display = "block";
+        div.style.display = (val === "bröd" || val === "alla") ? "block" : "none";
     });
 };
 
-
-const visaTårtor = () => {
-    const tårtor = document.querySelectorAll(".tårta");
-    const bakelser = document.querySelectorAll(".bakelse");
-    const bröd = document.querySelectorAll(".bröd");
-
-    tårtor.forEach(div => {
-        div.style.display = "block";
-    });
-
-    bakelser.forEach(div => {
-        div.style.display = "none";
-    });
-
-    bröd.forEach(div => {
-        div.style.display = "none";
-    });
-};
-
-
-const visaBakelser = () => {
-    const tårtor = document.querySelectorAll(".tårta");
-    const bakelser = document.querySelectorAll(".bakelse");
-    const bröd = document.querySelectorAll(".bröd");
-
-    tårtor.forEach(div => {
-        div.style.display = "none";
-    });
-
-    bakelser.forEach(div => {
-        div.style.display = "block";
-    });
-
-    bröd.forEach(div => {
-        div.style.display = "none";
-    });
-};
-
-
-const visaBröd = () => {
-    const tårtor = document.querySelectorAll(".tårta");
-    const bakelser = document.querySelectorAll(".bakelse");
-    const bröd = document.querySelectorAll(".bröd");
-
-    tårtor.forEach(div => {
-        div.style.display = "none";
-    });
-
-    bakelser.forEach(div => {
-        div.style.display = "none";
-    });
-
-    bröd.forEach(div => {
-        div.style.display = "block";
-    });
-};
-
-
-väljAlla.addEventListener("click", visaAlla);
-väljTårtor.addEventListener("click", visaTårtor);
-väljBakelser.addEventListener("click", visaBakelser);
-väljBröd.addEventListener("click", visaBröd);
+väljAlla.addEventListener("click", () => sortering("alla"));
+väljTårtor.addEventListener("click", () => sortering("tårta"));
+väljBakelser.addEventListener("click", () => sortering("bakelse"));
+väljBröd.addEventListener("click", () => sortering("bröd"));
