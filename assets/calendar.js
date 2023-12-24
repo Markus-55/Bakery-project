@@ -1,9 +1,9 @@
-const date = new Date();
-const [currMonth, currDate, currYear] = [
-  date.getMonth(),
-  date.getDate(),
-  date.getFullYear()
-];
+const prevNextBtn = document.querySelectorAll('.icons span');
+const icon = document.querySelector('icons');
+
+let date = new Date();
+let currMonth = date.getMonth();
+let currYear = date.getFullYear();
 
 const months = [
   'Januari',
@@ -26,21 +26,17 @@ const renderCalendar = () => {
   const lastDateOfMonth = new Date(currYear, currMonth + 1, 0).getDate();
   const lastDateOfLastMonth = new Date(currYear, currMonth, 0).getDate();
   const lastDayOfMonth = new Date(currYear, currMonth + 1, 0).getDay();
+  const lastDOfMonth = new Date(currYear, currMonth + 1, 0);
 
   // pushes last dates of last month to allDatesOfMonth arr
-  for(let i = firstDayOfMonth; i > 0; i--) {
-    allDatesOfMonth.push((lastDateOfLastMonth - i + 1));
-  }
+  for(let i = firstDayOfMonth; i > 0; i--) allDatesOfMonth.push((lastDateOfLastMonth - i + 1));
   
   // pushes dates of curr month to allDatesOfMonth arr
-  for(let i = 1; i <= lastDateOfMonth; i++) {
-    allDatesOfMonth.push(i);
-  }
+  for(let i = 1; i <= lastDateOfMonth; i++) allDatesOfMonth.push(i);
   
-  // pushes first date of next month to allDatesOfMonth arr
-  for(let i = lastDayOfMonth; i < 7; i++) {
-    allDatesOfMonth.push(i - lastDayOfMonth + 1);
-  }
+  //takes last day index and pushes first date of next month
+  //if index is 3 adds 4 days, loops until 7 calendar days are full
+  for(let i = lastDayOfMonth; i < 7; i++) allDatesOfMonth.push(i - lastDayOfMonth + 1);
   
   //displays & appends allDatesOfMonth to calendar
   for(let i = 0; i <= allDatesOfMonth.length - 1; i++) {
@@ -54,4 +50,22 @@ const renderCalendar = () => {
 }
 
 renderCalendar();
+
+prevNextBtn.forEach((element) => {
+  element.addEventListener('click', () => {
+    //loops and removes all li of days when going prev/next month
+    document.querySelectorAll('.days li').forEach(element => element.parentNode.removeChild(element));
+    currMonth = element.id === 'prev' ? currMonth -= 1 : currMonth += 1;
+
+    if(currMonth < 0 || currMonth > 11) {
+
+      //Updates the date if currMonth < 0 or > 11
+      date = new Date(currYear, currMonth, new Date().getDate());
+      currYear = date.getFullYear();
+      currMonth = date.getMonth();
+    } else date = new Date();
+
+    renderCalendar();
+  });
+});
     
