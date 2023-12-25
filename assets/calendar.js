@@ -1,5 +1,5 @@
-const prevNextBtn = document.querySelectorAll('.icons span');
-const icon = document.querySelector('icons');
+const prevNextBtn = document.querySelectorAll('#calendar span');
+const icon = document.querySelector('#calendar');
 
 let date = new Date();
 let currMonth = date.getMonth();
@@ -35,7 +35,7 @@ const renderCalendar = () => {
   for(let i = 1; i <= lastDateOfMonth; i++) allDatesOfMonth.push(i);
   
   //takes last day index and pushes first date of next month
-  //if index is 3 adds 4 days, loops until 7 calendar days are full
+  //if index is 3 adds 4 days, loops until all the 7 calendar days(horizontally) are full
   for(let i = lastDayOfMonth; i < 7; i++) allDatesOfMonth.push(i - lastDayOfMonth + 1);
   
   //displays & appends allDatesOfMonth to calendar
