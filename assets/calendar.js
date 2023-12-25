@@ -26,7 +26,6 @@ const renderCalendar = () => {
   const lastDateOfMonth = new Date(currYear, currMonth + 1, 0).getDate();
   const lastDateOfLastMonth = new Date(currYear, currMonth, 0).getDate();
   const lastDayOfMonth = new Date(currYear, currMonth + 1, 0).getDay();
-  const lastDOfMonth = new Date(currYear, currMonth + 1, 0);
 
   // pushes last dates of last month to allDatesOfMonth arr
   for(let i = firstDayOfMonth; i > 0; i--) allDatesOfMonth.push((lastDateOfLastMonth - i + 1));
