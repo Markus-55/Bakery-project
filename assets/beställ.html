@@ -58,6 +58,16 @@
         
       </nav>
     </header>
+
+    <div class="sortering">
+        <label for="sortera">Sortera:</label>
+        <select name="sortera" id="sort">
+            <option value="alla">Alla</option>
+            <option value="tårtor">Tårtor</option>
+            <option value="bakelser">Bakelser</option>
+            <option value="bröd">Bröd</option>
+        </select>
+    </div>
     
     <div id="calendar">
       <p class="current-date"></p>
@@ -83,117 +93,73 @@
       <ul class="days"></ul>
     </div>
     <main>
-      <div>
-        <img
-          src="bakelser/princess-cake.jpg"
-          alt="Princesstårta"
-          width="250px"
-          height="200px"
-        >
+
+        <div id="tårta">
+            <img src="bakelser/princess-cake.jpg" alt="Princesstårta" width="250px" height="200px">
 
         <p>Princesstårta</p>
         <p>250kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div>
-        <img
-          src="bakelser/chocolate cake.jpg"
-          alt="Chokladtårta"
-          width="250px"
-          height="200px"
-        >
+        <div id="tårta">
+            <img src="bakelser/chocolate cake.jpg" alt="Chokladtårta" width="250px" height="200px">
 
         <p>Chockladtårta</p>
         <p>300kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div>
-        <img
-          src="bakelser/fruitcake.jpg"
-          alt="Frukttårta"
-          width="250px"
-          height="200px"
-        >
+        <div id="tårta">
+            <img src="bakelser/fruitcake.jpg" alt="Frukttårta" width="250px" height="200px">
 
         <p>Frukttårta</p>
         <p>300kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div>
-        <img
-          src="bakelser/semla.jpg"
-          alt="Semla"
-          width="250px"
-          height="200px"
-        >
+        <div id="bakelse">
+            <img src="bakelser/semla.jpg" alt="Semla" width="250px" height="200px">
 
         <p>Semla</p>
         <p>30kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div>
-        <img
-          src="bakelser/kanelbulle.jpg"
-          alt="Kanelbulle"
-          width="250px"
-          height="200px"
-        >
+        <div id="bakelse">
+            <img src="bakelser/kanelbulle.jpg" alt="Kanelbulle" width="250px" height="200px">
 
         <p>Kanelbulle</p>
         <p>15kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div>
-        <img
-          src="bakelser/lussekatt.jpg"
-          alt="Lussekatt"
-          width="250px"
-          height="200px"
-        >
+        <div id="bakelse">
+            <img src="bakelser/lussekatt.jpg" alt="Lussekatt" width="250px" height="200px">
 
         <p>Lussekatt</p>
         <p>20kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div>
-        <img
-          src="bakelser/rågbröd.jpg"
-          alt="Rågbröd"
-          width="250px"
-          height="200px"
-        >
+        <div id="bröd">
+            <img src="bakelser/rågbröd.jpg" alt="Rågbröd" width="250px" height="200px"> 
 
         <p>Rågbröd</p>
         <p>30kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div>
-        <img
-          src="bakelser/baguette.jpg"
-          alt="Baguette"
-          width="250px"
-          height="200px"
-        >
+        <div id="bröd">
+            <img src="bakelser/baguette.jpg" alt="Baguette" width="250px" height="200px">
 
         <p>Baguette</p>
         <p>20kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div>
-        <img
-          src="bakelser/levainbröd.jpg"
-          alt="Levainbröd"
-          width="250px"
-          height="200px"
-        >
+        <div id="bröd">
+            <img src="bakelser/levainbröd.jpg" alt="Levainbröd" width="250px" height="200px">
 
         <p>Levainbröd</p>
         <p>30kr</p>
@@ -202,5 +168,6 @@
 
     </main>
     <script src="calendar.js"></script>
-  </body>
+    <script src="beställ-sortering.js"></script>
+</body>
 </html>
