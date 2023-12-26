@@ -91,11 +91,6 @@ header {
     }
 }
 
-.sortering{
-    display: flex;
-    margin-left: 70%;
-    padding-top: 15px;
-}
 
 main {
     display: grid; 
@@ -105,7 +100,7 @@ main {
     row-gap: 20px;
     justify-content: center;
 
-    .shop-item{
+    div{
         border: 1px solid black;
         margin-top: 50px;
         justify-self: center;
@@ -122,10 +117,97 @@ main {
 
 input{
     width: 40px;
-}
+}   
+
 
 .cart-container {
+    background-color: #EBE9E3;;
+    font-weight: bold;
+    border: 1px solid red;
+    width: 22%;
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+    position: relative;
+    padding: 3px 4px 5px 6px;
+}
+
+.cart-information {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bolder;
+    font-size: large;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+.remove-item {
+    position: absolute;
+    right: 10px;
+}
+
+.produkt {
+    flex: 1;
+}
+
+.antal {
+    margin-left: 5px;
+}
+
+.pris {
+    margin-left: 55px;
+    position: relative;
+    flex: 1;
+}
+
+.cart-item-price{
+    position: absolute;
+    right: 110px;
+}
+
+.cart-items {
+    padding: 10px 0px 20px 0px;
+}
+
+
+.cart-total-price, .cart-total-title {
+    margin: 10px;
+    font-size: larger;
+    margin-top: 100%;
+    padding: 25px;
+}
+
+.cart-row{
+    display: flex;
+    margin-left: 5px;
+    padding: 8px 2px 3px 4px;
+}
+
+.cart-item {
+    float: left;
+    max-width: 30;
+
+}
+
+.units {
+    display: flex;
+    position: absolute;
+    right: 170px;
+    padding: 1px 2px 10px 4px;
+
+}
+
+.btn-minus, .btn-plus, .number{
+    margin: 5px;
+    padding: 1px 3px 5px 4px;
+}
+.products {
     display: none;
 }
 
+#emptyCart {
+    float: right;
+    transform: translate(0%, -90%);
+}
 
