@@ -3,6 +3,7 @@ const productsElement = document.querySelector(".products")
 const cartItemsEl = document.querySelector(".cart-items")
 const cartTotalPriceEl = document.querySelector(".cart-total-price")
 const totalItemsInCartEl = document.querySelector(".items-in-cart")
+const quantityInput = document.querySelector("#quantity")
 
 // RENDER PRODUCTS
 function renderProducts(){
@@ -11,11 +12,11 @@ function renderProducts(){
         <img class="shop-item-image"src=${product.imagesrc} alt=${product.name} width="250px" height="200px">
 
         <p class="shop-item-title">${product.name}</p>
-        <p class="shop-item-price">${product.price}</p>
+        <p class="shop-item-price">${product.price + "kr"}</p> 
         <div class="shop-item-details">
             <p>${product.description}</p>
             <button class="shop-item-button" onclick="addToCart(${product.id})" type="button">LÄGG TILL</button>
-            <input class="shop-item-quantity" type="number" value="1" />
+            <input type="number" value="1" min="1" id="quantity${product.id}" />
         </div>
     </div>`
     })
@@ -29,20 +30,25 @@ updateCart();
 
 // Add to cart 
 function addToCart(id){
-    // Check if product already exist in cart
-    if (cart.some((item) => item.id === id)){
-        changeQuantity("plus", id);
+    const quantityInput = document.querySelector(`#quantity${id}`);
+    const quantity = parseInt(quantityInput.value, 10) || 1;
+    
+    const existingItem = cart.find((item) => item.id === id);
+    if (existingItem) {
+       
+        // Product already in the cart, update the quantity
+        existingItem.numberOfUnits += quantity;
 
     } else {
         const item = products.find((product) => product.id === id);
         
         cart.push({
             ...item,
-            numberOfUnits : 1,
+            numberOfUnits : quantity,
         });
     }
 
-    updateCart()
+    updateCart()    
 
     }
 
