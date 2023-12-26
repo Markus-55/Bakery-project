@@ -2,60 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beställ</title>
 
-    <link
-      rel="stylesheet"
-      href="beställ.css"
-    >
-    <link
-      rel="stylesheet"
-      href="calendar.css"
-    >
+    <link rel="stylesheet" href="beställ.css">
+    <link rel="stylesheet" href="calendar.css">
     <!-- Google Font Link for Icons -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   </head>
   <body>
     <header>
       <div>
-        <img
-          src="logo/Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo  (1).png"
-          alt="logotype"
-        >
+        <img src="logo/Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo  (1).png" alt="logotype">
       </div>
 
       <nav>
         <ul>
-          <li>
-            <a
-              class="hemknapp"
-              href="index.html"
-              >Hem</a
-            >
-          </li>
+          <li><a class="hemknapp" href="index.html">Hem</a></li>
           <li>Beställ</li>
           <li>Om oss</li>
           <li>Kontakt</li>
           <li>Jobba hos oss</li>
           <li>Kalender</li>
 
-          <a
-            class="cart"
-            href=""
-          >
+          <a class="cart" href="">
             <img
               alt="Shopping cart"
               src="icons/shopping cart.jpg"
               width="50"
-              height="50"
-            >
+              height="50">
           </a>
         </ul>
       </nav>
@@ -63,29 +38,18 @@
 
     <div class="sortering">
       <label for="sortera">Sortera:</label>
-      <select
-        name="sortera"
-        id="sort"
-      >
-        <option value="alla">Alla</option>
-        <option value="tårtor">Tårtor</option>
-        <option value="bakelser">Bakelser</option>
-        <option value="bröd">Bröd</option>
+      <select name="sortera" id="sort">
+        <option id="alla" value="alla">Alla </option>
+        <option id="tårtor" value="tårtor">Tårtor</option>
+        <option id="bakelser" value="bakelser">Bakelser</option>
+        <option id="bröd" value="bröd">Bröd</option>
       </select>
     </div>
 
     <div id="calendar">
       <p class="current-date"></p>
-      <span
-        id="prev"
-        class="material-symbols-rounded"
-        >chevron_left
-      </span>
-      <span
-        id="next"
-        class="material-symbols-rounded"
-        >chevron_right
-      </span>
+      <span id="prev" class="material-symbols-rounded">chevron_left</span>
+      <span id="next" class="material-symbols-rounded">chevron_right</span>
       <ul id="weeks">
         <li>Mon</li>
         <li>Tis</li>
@@ -98,117 +62,107 @@
       <ul class="days"></ul>
     </div>
     <main>
-      <div id="tårta">
+      <div class="tårta">
         <img
           src="bakelser/princess-cake.jpg"
           alt="Princesstårta"
           width="250px"
-          height="200px"
-        >
+          height="200px">
 
         <p>Princesstårta</p>
         <p>250kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div id="tårta">
+      <div class="tårta">
         <img
           src="bakelser/chocolate cake.jpg"
           alt="Chokladtårta"
           width="250px"
-          height="200px"
-        >
+          height="200px">
 
         <p>Chockladtårta</p>
         <p>300kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div id="tårta">
+      <div class="tårta">
         <img
           src="bakelser/fruitcake.jpg"
           alt="Frukttårta"
           width="250px"
-          height="200px"
-        >
+          height="200px">
 
         <p>Frukttårta</p>
         <p>300kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div id="bakelse">
+      <div class="bakelse">
         <img
           src="bakelser/semla.jpg"
           alt="Semla"
           width="250px"
-          height="200px"
-        >
+          height="200px">
 
         <p>Semla</p>
         <p>30kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div id="bakelse">
+      <div class="bakelse">
         <img
           src="bakelser/kanelbulle.jpg"
           alt="Kanelbulle"
           width="250px"
-          height="200px"
-        >
+          height="200px">
 
         <p>Kanelbulle</p>
         <p>15kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div id="bakelse">
+      <div class="bakelse">
         <img
           src="bakelser/lussekatt.jpg"
           alt="Lussekatt"
-          width="250px"
-          height="200px"
-        >
-
+          width="250px">
+          
         <p>Lussekatt</p>
         <p>20kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div id="bröd">
+      <div class="bröd">
         <img
           src="bakelser/rågbröd.jpg"
           alt="Rågbröd"
           width="250px"
-          height="200px"
-        >
+          height="200px">
 
         <p>Rågbröd</p>
         <p>30kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div id="bröd">
+      <div class="bröd">
         <img
           src="bakelser/baguette.jpg"
           alt="Baguette"
           width="250px"
-          height="200px"
-        >
+          height="200px">
 
         <p>Baguette</p>
         <p>20kr</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
-      <div id="bröd">
+      <div class="bröd">
         <img
           src="bakelser/levainbröd.jpg"
           alt="Levainbröd"
           width="250px"
-          height="200px"
-        >
+          height="200px">
 
         <p>Levainbröd</p>
         <p>30kr</p>
