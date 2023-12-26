@@ -170,6 +170,7 @@ input{
     padding: 10px 0px 20px 0px;
 }
 
+
 .cart-total-price, .cart-total-title {
     margin: 10px;
     font-size: larger;
@@ -203,5 +204,10 @@ input{
 }
 .products {
     display: none;
+}
+
+#emptyCart {
+    float: right;
+    transform: translate(0%, -90%);
 }
 

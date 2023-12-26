@@ -4,6 +4,7 @@ const cartItemsEl = document.querySelector(".cart-items")
 const cartTotalPriceEl = document.querySelector(".cart-total-price")
 const totalItemsInCartEl = document.querySelector(".items-in-cart")
 const quantityInput = document.querySelector("#quantity")
+const clearCart = document.querySelector("#emptyCart")
 
 // RENDER PRODUCTS
 function renderProducts(){
@@ -61,7 +62,16 @@ function updateCart(){
 // save cart to local storage
 localStorage.setItem("CART", JSON.stringify(cart))
 }
+const emptyCart = () => {
+    while(cartItemsEl.firstChild) cartItemsEl.removeChild(cartItemsEl.firstChild)
+    
+    cart = [];
 
+    renderTotal()
+
+    localStorage.setItem("CART", JSON.stringify(cart));
+}
+clearCart.addEventListener("click", emptyCart)
 // Calculate and render total price
 function renderTotal(){
     let cartTotalPrice = 0
@@ -101,7 +111,6 @@ function removeItem(id){
     updateCart()
 }
 
-
 //Change quantity 
 function changeQuantity(action, id) {
    cart = cart.map((item) => {
@@ -121,6 +130,5 @@ function changeQuantity(action, id) {
 
     };
  });    
-
  updateCart();
 }
