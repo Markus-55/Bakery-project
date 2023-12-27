@@ -1,5 +1,6 @@
 const prevNextBtn = document.querySelectorAll('#calendar span');
-const icon = document.querySelector('#calendar');
+const calendar = document.querySelector('#calendar');
+const payBtn = document.querySelector('#order-payment');
 
 let date = new Date();
 let currMonth = date.getMonth();
@@ -40,15 +41,25 @@ const renderCalendar = () => {
   //displays & appends allDatesOfMonth to calendar
   for(let i = 0; i <= allDatesOfMonth.length - 1; i++) {
     const li = document.createElement('li');
-    
     li.append(allDatesOfMonth[i]);
+    
     document.querySelector('.days').appendChild(li);
   }
 
   document.querySelector('.current-date').innerText = `${months[currMonth]} ${currYear}`;
 }
-
 renderCalendar();
+
+const hideShowCalendar = () => {
+  calendar.style.visibility = 'hidden';
+  payBtn.style.visibility = 'hidden';
+
+  document.querySelector('#choose-date').addEventListener('click', () => {
+    calendar.style.visibility = 'visible';
+    payBtn.style.visibility = 'visible';
+  });
+}
+hideShowCalendar();
 
 prevNextBtn.forEach((element) => {
   element.addEventListener('click', () => {
@@ -67,4 +78,3 @@ prevNextBtn.forEach((element) => {
     renderCalendar();
   });
 });
-    

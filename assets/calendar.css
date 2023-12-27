@@ -1,9 +1,18 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-#calendar {
+#calendar-wrapper {
   position: relative;
   float: right;
+  margin-right: 70px;
+}
+
+#choose-date, #order-payment {
+  background-color: #EBE9E3;
+}
+
+#calendar {
+  position: relative;
   border: 1px solid black;
   border-radius: 2%;
   width: 250px;
