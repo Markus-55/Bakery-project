@@ -9,7 +9,7 @@ const clearCart = document.querySelector("#emptyCart")
 // RENDER PRODUCTS
 function renderProducts(){
     products.forEach( (product) => {
-        productsElement.innerHTML += `<div class="shop-item">
+        productsElement.innerHTML += `<div class="shop-item, ${product.type}">
         <img class="shop-item-image"src=${product.imagesrc} alt=${product.name} width="250px" height="200px">
 
         <p class="shop-item-title">${product.name}</p>
