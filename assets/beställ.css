@@ -97,6 +97,7 @@ header {
     padding-top: 15px;
 }
 
+
 main {
     display: grid; 
     grid-template-columns: 15% 15% 15%;
@@ -105,7 +106,7 @@ main {
     row-gap: 20px;
     justify-content: center;
 
-    .shop-item{
+    .shop-item {
         border: 1px solid black;
         margin-top: 50px;
         justify-self: center;
