@@ -8,10 +8,10 @@
 **Idag har jag lärt mig** -
 
 ## Namn: Stefan Lahtinen
-**Idag har jag** försökt lösa ut buggar i koden och fixa så att sorteringen funkar igen efter senaste mergen.
+**Idag har jag** fixat buggar och löst sorteringsfunktionen och stylingen.
 
-**Ett problem jag har** är att förstå varför css stylingen inte funkar på de dynamiska divarna.
+**Ett problem jag har** förstå varför saker funkar annorlunda i firefox och chrome även om jag har en css reset.
 
 **Jag behöver hjälp med** inget just nu.
 
-**Idag har jag lärt mig** förstå sammanband i koden mer och lite hur man kan avnända arrays och object i sin kod.
+**Idag har jag lärt mig** att om man har flera classnamn i ett element så ska man inte ha ett kommatecken mellan dem xD
