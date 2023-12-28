@@ -31,8 +31,6 @@ const renderCalendar = () => {
   const lastDateOfLastMonth = new Date(currYear, currMonth, 0).getDate();
   const lastDayOfMonth = new Date(currYear, currMonth + 1, 0).getDay();
 
-
-
   // pushes last dates of last month to calendar
   for(let i = firstDayOfMonth; i > 0; i--) {
     li = document.createElement('li');
@@ -102,15 +100,16 @@ const hideShowCalendar = () => {
 }
 hideShowCalendar();
 
+// Event listener for 'prev' and 'next' buttons to navigate between months,
+// updating the calendar display and current date accordingly
 prevNextBtn.forEach((element) => {
   element.addEventListener('click', () => {
-    //loops and removes all li of days when going prev/next month
+    //Removes all existing li elements of days when going to the previous or next month
     document.querySelectorAll('.days li').forEach(element => element.parentNode.removeChild(element));
+
+    // Updates the current month based on the clicked button (prev or next)
     currMonth = element.id === 'prev' ? currMonth -= 1 : currMonth += 1;
-
     if(currMonth < 0 || currMonth > 11) {
-
-      //Updates the date if currMonth < 0 or > 11
       date = new Date(currYear, currMonth, new Date().getDate());
       currYear = date.getFullYear();
       currMonth = date.getMonth();
