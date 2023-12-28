@@ -77,6 +77,11 @@ header {
                   text-decoration: none;
               }
 
+              .beställknapp{
+                color: inherit;
+                text-decoration: none;
+              }
+              
           }
           
       }

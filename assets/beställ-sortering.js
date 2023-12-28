@@ -1,19 +1,15 @@
-const väljAlla = document.querySelector("#alla");
-const väljTårtor = document.querySelector("#tårtor");
-const väljBakelser = document.querySelector("#bakelser");
-const väljBröd = document.querySelector("#bröd");
-
-const sortering = (val) => {
+const sortering = () => {
+    const val = document.getElementById("sortera").value;
     const tårtor = document.querySelectorAll(".tårta");
     const bakelser = document.querySelectorAll(".bakelse");
     const bröd = document.querySelectorAll(".bröd");
 
     tårtor.forEach(div => {
-        div.style.display = (val === "tårta" || val === "alla") ? "block" : "none";
+        div.style.display = (val === "tårtor" || val === "alla") ? "block" : "none";
     });
 
     bakelser.forEach(div => {
-        div.style.display = (val === "bakelse" || val === "alla") ? "block" : "none";
+        div.style.display = (val === "bakelser" || val === "alla") ? "block" : "none";
     });
 
     bröd.forEach(div => {
@@ -21,7 +17,4 @@ const sortering = (val) => {
     });
 };
 
-väljAlla.addEventListener("click", () => sortering("alla"));
-väljTårtor.addEventListener("click", () => sortering("tårta"));
-väljBakelser.addEventListener("click", () => sortering("bakelse"));
-väljBröd.addEventListener("click", () => sortering("bröd"));
+document.getElementById("sortera").addEventListener("change", sortering);

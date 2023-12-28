@@ -13,7 +13,7 @@ const products = [
   type: "tårta",
   price: 300,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/princess-cake.jpg",
+  imagesrc: "bakelser/chocolate-cake.jpg",
 },
 {
   id: 2,
