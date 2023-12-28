@@ -1,6 +1,7 @@
 const prevNextBtn = document.querySelectorAll('#calendar span');
 const calendar = document.querySelector('#calendar');
 const payBtn = document.querySelector('#order-payment');
+const days = document.querySelector('.days');
 
 let date = new Date();
 let currMonth = date.getMonth();
@@ -22,31 +23,60 @@ const months = [
 ];
 
 const renderCalendar = () => {
+  let li;
   const allDatesOfMonth = [];
   const firstDayOfMonth = new Date(currYear, currMonth, 0).getDay();
   const lastDateOfMonth = new Date(currYear, currMonth + 1, 0).getDate();
   const lastDateOfLastMonth = new Date(currYear, currMonth, 0).getDate();
   const lastDayOfMonth = new Date(currYear, currMonth + 1, 0).getDay();
 
-  // pushes last dates of last month to allDatesOfMonth arr
-  for(let i = firstDayOfMonth; i > 0; i--) allDatesOfMonth.push((lastDateOfLastMonth - i + 1));
-  
-  // pushes dates of curr month to allDatesOfMonth arr
-  for(let i = 1; i <= lastDateOfMonth; i++) allDatesOfMonth.push(i);
+
+
+  // pushes last dates of last month to calendar
+  for(let i = firstDayOfMonth; i > 0; i--) {
+    li = document.createElement('li');
+    li.className = 'prevMonth';
+
+    allDatesOfMonth.push(lastDateOfLastMonth - i + 1);
+    li.append(lastDateOfLastMonth - i + 1);
+    days.appendChild(li);
+  }
+
+  // pushes dates of curr/selected month to calendar
+  for(let i = 1; i <= lastDateOfMonth; i++) {
+    li = document.createElement('li');
+
+    allDatesOfMonth.push(i);
+    li.append(i);
+    days.appendChild(li);
+  }
   
   //takes last day index and pushes first date of next month
   //if index is 3 adds 4 days, loops until all the 7 calendar days(horizontally) are full
-  for(let i = lastDayOfMonth; i < 7; i++) allDatesOfMonth.push(i - lastDayOfMonth + 1);
-  
-  //displays & appends allDatesOfMonth to calendar
-  for(let i = 0; i <= allDatesOfMonth.length - 1; i++) {
-    const li = document.createElement('li');
-    li.append(allDatesOfMonth[i]);
+  for(let i = lastDayOfMonth; i < 7; i++) {
+    li = document.createElement('li');
+    li.className = 'nextMonth';
     
-    document.querySelector('.days').appendChild(li);
+    allDatesOfMonth.push(i - lastDayOfMonth + 1);
+    li.append(i - lastDayOfMonth + 1);
+    days.appendChild(li);
   }
-
   document.querySelector('.current-date').innerText = `${months[currMonth]} ${currYear}`;
+
+  document.querySelectorAll('.prevMonth').forEach(element => element.style.color = '#969696')
+  document.querySelectorAll('.nextMonth').forEach(element => element.style.color = '#969696')
+
+  //Get date when clicked
+  allDatesOfMonth.forEach((date, index) => {
+    document.querySelectorAll('.days li')[index].addEventListener('click', (event) => {
+
+      if(event.currentTarget.classList.contains('prevMonth')) {
+        console.log('This is the previous month');
+      } else if(event.currentTarget.classList.contains('nextMonth')) {
+        console.log('Please select next month to order');
+      } else console.log(`${date} ${months[currMonth]} ${currYear}`);
+    });
+  });
 }
 renderCalendar();
 
