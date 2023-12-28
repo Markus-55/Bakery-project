@@ -2,6 +2,7 @@ const prevNextBtn = document.querySelectorAll('#calendar span');
 const calendar = document.querySelector('#calendar');
 const payBtn = document.querySelector('#order-payment');
 const days = document.querySelector('.days');
+const orderDate = document.querySelector('.order-date');
 
 let date = new Date();
 let currMonth = date.getMonth();
@@ -63,18 +64,27 @@ const renderCalendar = () => {
   }
   document.querySelector('.current-date').innerText = `${months[currMonth]} ${currYear}`;
 
-  document.querySelectorAll('.prevMonth').forEach(element => element.style.color = '#969696')
-  document.querySelectorAll('.nextMonth').forEach(element => element.style.color = '#969696')
+  document.querySelectorAll('.prevMonth').forEach(element => element.style.color = '#969696');
+  document.querySelectorAll('.nextMonth').forEach(element => element.style.color = '#969696');
 
-  //Get date when clicked
+  // Event listener for date selection
   allDatesOfMonth.forEach((date, index) => {
     document.querySelectorAll('.days li')[index].addEventListener('click', (event) => {
+      document.querySelector('.order-date').style.visibility = 'visible';
 
       if(event.currentTarget.classList.contains('prevMonth')) {
-        console.log('This is the previous month');
-      } else if(event.currentTarget.classList.contains('nextMonth')) {
-        console.log('Please select next month to order');
-      } else console.log(`${date} ${months[currMonth]} ${currYear}`);
+        orderDate.innerText = 'Du kan inte beställa för föregående månad.';
+      } 
+      else if(event.currentTarget.classList.contains('nextMonth')) {
+        orderDate.innerText = 'Vänligen välj nästa månad för att göra en beställning på nästa månad.';
+      } else orderDate.innerText = `Din beställning planeras för ${date} ${months[currMonth]} ${currYear}.`;
+      
+      /// Event listener for payment
+      document.querySelector('#order-payment').addEventListener('click', () => {
+        if(orderDate.innerText.includes(`${date} ${months[currMonth]} ${currYear}`)) {
+          orderDate.innerText = 'Beställningen är nu betald!';
+        } 
+      });
     });
   });
 }
@@ -83,6 +93,7 @@ renderCalendar();
 const hideShowCalendar = () => {
   calendar.style.visibility = 'hidden';
   payBtn.style.visibility = 'hidden';
+  document.querySelector('.order-date').style.visibility = 'hidden';
 
   document.querySelector('#choose-date').addEventListener('click', () => {
     calendar.style.visibility = 'visible';

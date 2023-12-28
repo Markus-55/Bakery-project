@@ -12,7 +12,7 @@
   <body>
     <header>
       <div>
-        <img src="logo/Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo  (1).png"alt="logotype">
+        <img src="logo/Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo  (1).png" alt="logotype">
       </div>
 
       <nav>
@@ -32,41 +32,42 @@
       </nav>
     </header>
     <main class="products"></main>
-    <div class="cart-container">
-      <div class="cart-information">
-        <span class="produkt">Produkt </span>
-        <span class="antal">Antal </span>
-        <span class="pris">á pris</span>
-      </div>
-      <div class="cart-items"></div>
+    <div class="container">
+      <div class="cart-container">
+        <div class="cart-information">
+          <span class="produkt">Produkt </span>
+          <span class="antal">Antal </span>
+          <span class="pris">á pris</span>
+        </div>
+        <div class="cart-items"></div>
 
-      <div class="cart-total">
-        <span class="cart-total-title">Total pris:</span>
-        <span class="cart-total-price">0 kr</span>
-        <div>
-          <button id="emptyCart">Töm varukorg</button>
+        <div class="cart-total">
+          <span class="cart-total-title">Total pris:</span>
+          <span class="cart-total-price">0 kr</span>
+          <div>
+            <button id="emptyCart">Töm varukorg</button>
+          </div>
         </div>
       </div>
-      
-    </div>
-    <div id="calendar-wrapper">
-      <button id="choose-date">Välj Datum för beställning</button>
-      <div id="calendar">
-        <p class="current-date"></p>
-        <span id="prev" class="material-symbols-rounded">chevron_left</span>
-        <span id="next" class="material-symbols-rounded">chevron_right</span>
-        <ul id="weeks">
-          <li>Mon</li>
-          <li>Tis</li>
-          <li>Ons</li>
-          <li>Tors</li>
-          <li>Fre</li>
-          <li>Lör</li>
-          <li>Sön</li>
-        </ul>
-        <ul class="days"></ul>
+      <div id="calendar-container">
+        <button id="choose-date">Välj Datum för beställning</button>
+        <div id="calendar">
+          <p class="current-date"></p>>chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+          <ul id="weeks">
+            <li>Mon</li>
+            <li>Tis</li>
+            <li>Ons</li>
+            <li>Tors</li>
+            <li>Fre</li>
+            <li>Lör</li>
+            <li>Sön</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+        <p class="order-date"></p>
+        <button id="order-payment">Betala</button>
       </div>
-      <button id="order-payment">Betala</button>
     </div>
 
     <script src="calendar.js"></script>
