@@ -5,7 +5,7 @@ const products = [
   type: "tårta",
   price: 250,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/princess-cake.jpg",
+  imagesrc: "/assets/bakelser/princess-cake.jpg",
 },
 {
   id: 1,
@@ -13,7 +13,7 @@ const products = [
   type: "tårta",
   price: 300,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/chocolate-cake.jpg",
+  imagesrc: "/assets/bakelser/chocolate-cake.jpg",
 },
 {
   id: 2,
@@ -21,7 +21,7 @@ const products = [
   type: "tårta",
   price: 300,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/fruitcake.jpg",
+  imagesrc: "/assets/bakelser/fruitcake.jpg",
 },
 {
   id: 3,
@@ -29,7 +29,7 @@ const products = [
   type: "bakelse",
   price: 20,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/lussekatt.jpg",
+  imagesrc: "/assets/bakelser/lussekatt.jpg",
 },
 {
   id: 4,
@@ -37,7 +37,7 @@ const products = [
   type: "bröd",
   price: 30,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/rågbröd.jpg",
+  imagesrc: "/assets/bakelser/rågbröd.jpg",
 },
 {
   id: 5,
@@ -45,7 +45,7 @@ const products = [
   type: "bröd",
   price: 20,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/baguette.jpg",
+  imagesrc: "/assets/bakelser/baguette.jpg",
 },
 {
   id: 6,
@@ -53,7 +53,7 @@ const products = [
   type: "bröd",
   price: 30,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/levainbröd.jpg",
+  imagesrc: "/assets/bakelser/levainbröd.jpg",
 },
 {
   id: 7,
@@ -61,7 +61,7 @@ const products = [
   type: "bakelse",
   price: 15,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/kanelbulle.jpg",
+  imagesrc: "/assets/bakelser/kanelbulle.jpg",
 },
 {
   id: 8,
@@ -69,7 +69,7 @@ const products = [
   type: "bakelse",
   price: 30,
   description: "Lorem ipsum dolor sit amet.",
-  imagesrc: "bakelser/semla.jpg",
+  imagesrc: "/assets/bakelser/semla.jpg",
 },
 ]
 
